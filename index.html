@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./styles/hero.css" />
   </head>
   <body>
+    <div id="burger_menu">
+      <a href="#hero" class="menu_item">Inicio</a>
+      <a href="#galeria" class="menu_item">Galeria</a>
+      <a href="#album" class="menu_item">Album</a>
+    </div>
     <header>
       <section id="social_media">
         <a
@@ -24,10 +29,39 @@
           <img src="./assets/icons/instagram.svg" alt="Instagram" width="32" />
         </a>
       </section>
+
+      <nav>
+        <a href="#burger_menu" id="open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="42px"
+            viewBox="0 -960 960 960"
+            width="42px"
+            fill="#ffffff"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </a>
+        <a href="#" id="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="42px"
+            viewBox="0 -960 960 960"
+            width="42px"
+            fill="#ffffff"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </a>
+      </nav>
     </header>
 
     <main></main>
-    
+
     <footer></footer>
   </body>
 </html>

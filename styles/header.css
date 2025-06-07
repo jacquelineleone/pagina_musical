@@ -1,5 +1,75 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+
 #social_media {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+/* estilos del menu hamburguesa */
+#burger_menu {
+  background-color: #000;
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  right: -400px;
+  transition: right 0.4s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 32px;
+}
+
+#burger_menu:target {
+  right: 0;
+}
+
+#close {
+  display: none;
+}
+
+#burger_menu:target ~ header nav #open {
+  display: none;
+}
+
+#burger_menu:target ~ header nav #close {
+  display: inline-block;
+}
+
+/* estilos para cada item del menú */
+.menu_item {
+  display: flex;
+  font-size: 2rem;
+
+  transform: translateX(50px);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+/* efecto para que los items aparezcan de a uno */
+#burger_menu:target .menu_item {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#burger_menu:target .menu_item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+#burger_menu:target .menu_item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+#burger_menu:target .menu_item:nth-child(3) {
+  transition-delay: 0.4s;
 }
