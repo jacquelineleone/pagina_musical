@@ -1,6 +1,22 @@
+@font-face {
+  font-family: "PlayDayStencil";
+  src: url("../assets/fonts/PlayDayStencil.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AntonSC";
+  src: url("../assets/fonts/AntonSC-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "AntonSC", sans-serif;
+  letter-spacing: 2px;
   box-sizing: border-box;
 }
 
