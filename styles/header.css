@@ -15,7 +15,7 @@ header {
   gap: 18px;
 }
 
-/* estilos del menu hamburguesa */
+/* Estilos del menu hamburguesa */
 #burger_menu {
   background-color: #000;
   height: 100vh;
@@ -34,6 +34,7 @@ header {
   right: 0;
 }
 
+/* Control de botones según el menú esté abierto o cerrado */
 #close {
   display: none;
 }
@@ -46,7 +47,7 @@ header {
   display: inline-block;
 }
 
-/* estilos para cada item del menú */
+/* Estilos para cada item del menú */
 .menu_item {
   display: flex;
   font-size: 2rem;
@@ -56,7 +57,7 @@ header {
   opacity: 0;
 }
 
-/* efecto para que los items aparezcan de a uno */
+/* Efecto para que los items aparezcan de a uno */
 #burger_menu:target .menu_item {
   transform: translateX(0);
   opacity: 1;
