@@ -6,8 +6,10 @@
 
 body {
   background-color: #292e25;
+  color: #ffffff;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
