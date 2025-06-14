@@ -1,0 +1,41 @@
+#hero {
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date h3 {
+  background-color: var(--primary-pink);
+  font-size: 32px;
+  color: #ffffff;
+  text-transform: lowercase;
+  text-align: center;
+
+  padding: 0 20px;
+}
+
+.title h1 {
+  font-size: 175px;
+  color: var(--primary-pink);
+  text-transform: uppercase;
+}
+
+.title h2 {
+  background-color: var(--primary-pink);
+  font-size: 84px;
+  color: #000000;
+  text-transform: lowercase;
+  text-align: center;
+}
