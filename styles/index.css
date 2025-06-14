@@ -12,6 +12,11 @@
   font-style: normal;
 }
 
+:root {
+  --primary-pink: #ec97b6;
+  --primary-gray: #292e25;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -23,7 +23,7 @@ a {
 
 /* Estilos del menu hamburguesa */
 #burger_menu {
-  background-color: #292E25;
+  background-color: var(--primary-gray);
   height: 100vh;
   width: 100vw;
   position: fixed;
