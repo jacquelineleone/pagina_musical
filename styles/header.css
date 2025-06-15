@@ -23,6 +23,11 @@ a {
   transition: opacity 0.3s ease;
 }
 
+#social_media a:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
 /* Estilos del menu hamburguesa */
 #burger_menu {
   background-color: var(--primary-gray);
