@@ -19,6 +19,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 18px;
+
+  transition: opacity 0.3s ease;
 }
 
 /* Estilos del menu hamburguesa */
@@ -52,9 +54,11 @@ a {
   display: none;
 }
 
+/* Esconder iconos de redes sociales, cuando el menú está abierto */
 #burger_menu:target ~ header #social_media {
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 #burger_menu:target ~ header nav #close {
