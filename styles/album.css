@@ -1,0 +1,43 @@
+#album {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+#vinyl {
+  height: 70vh;
+  width: 500px;
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#vinyl img {
+  width: 500px;
+}
+
+#disc {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+}
+
+#vinyl img:first-child:hover {
+    background-color: cadetblue;
+}
+
+#songs {
+  height: 70vh;
+  width: 500px;
+  overflow: auto;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
