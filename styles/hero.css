@@ -1,5 +1,12 @@
+/* Ocultar el input radio */
+input[type="radio"] {
+  display: none;
+}
+
 #hero {
-  background-image: url("../assets/background.jpg");
+  height: 100vh;
+  position: relative;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,9 +15,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
+  transition: background-image 1s ease;
 }
 
+/* Estilos del carousel */
+.carousel {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.carousel label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.carousel label:hover {
+  opacity: 1;
+}
+
+/* Control de imagen que se muestra, según item del radio seleccionado */
+#slide1:checked ~ #hero {
+  background-image: url("../assets/background.jpg"); 
+}
+
+#slide2:checked ~ #hero {
+  background-image: url("../assets/background-2.jpg"); 
+}
+
+#slide3:checked ~ #hero {
+  background-image: url("../assets/background-3.jpg"); 
+}
+
+/* Estilos del contenido */
 .date {
   display: flex;
   justify-content: space-between;
